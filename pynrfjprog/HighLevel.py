@@ -60,7 +60,7 @@ class API(object):
 
         os_name = sys.platform.lower()
 
-        if os_name.startswith('win'):
+        if os_name.startswith('win') or os_name.startswith('msys'):
             highlevel_nrfjprog_dll_name = 'highlevelnrfjprog.dll'
         elif os_name.startswith('lin'):
             highlevel_nrfjprog_dll_name = 'libhighlevelnrfjprog.so'
